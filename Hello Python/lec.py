@@ -6,7 +6,7 @@ print('hello world')
 
 # print(type(a))
 
-s = '"hello" world!'
+# s = '"hello" world!'
 # print(s)
 
 # print(a, ' - ', b, s)
@@ -65,3 +65,11 @@ s = '"hello" world!'
 
 # for i in 'какая-то строка':
 #     print(i)
+
+
+print('Введите а');
+a = input() # 10
+print('Введите b');
+b = input() # 20
+c = 30
+print(a, ' + ', b, ' = ', c)

@@ -16,14 +16,15 @@
 # 2 Программа принимает на вход 5 чисел и находит максимальное
 
 # from random import randint #если пользователь вводит число, то эта строка не нужна
-# numbers = []
+numbers = []
 # #numbers = [].pop() pop принимает индекс элемента, который нужно удалить
 # #или remove, который принимает значение элемента
-# for i in range(5):
-#     numbers.append(randint(-100, 100)) # numbers.append(int(input('--> ')))
-# max_count = max(numbers)
-# print(numbers)
-# print(max_count)
+for i in range(5):
+#     numbers.append(randint(-100, 100)) # 
+    numbers.append(int(input('--> ')))
+max_count = max(numbers)
+print(numbers)
+print(max_count)
 
 
 # срезы массивов:
