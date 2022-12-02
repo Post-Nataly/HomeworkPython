@@ -25,16 +25,7 @@
 # a = str(input("Введите строку: "))
 # b = str(input("Введите часть первой строки: "))
 # print(a.count(b))
-
-s1 = 'ЯлюблюлюблюлюблюPython'
-s2 = 'лю'
-cnt = 0
-while s2 in s1:
-    s1 = s1.replace(s2, ' ', 1)
-print(s1)
-cnt += 1
-print(cnt)
-
+# или
 # s1 = 'Я люблю люблюлюблюPython'
 # s2 = 'лю'
 # res = s1.split(s2)
