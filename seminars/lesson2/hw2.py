@@ -1,21 +1,22 @@
 # 1. Программа принимает на вход вещественное число и показывает сумму его цифр.
 
-num = input("Введите дробь: ")
-mass = num.split('.')
-a = int(mass[0])
-b = int(mass[1])
-sum = 0
-while (a != 0):
-    sum += a %10
-    a = a // 10
-while (b != 0):
-    sum += b%10
-    b = b // 10
-print(int(sum))
+# num = input("Введите дробь: ")
+# mass = num.split('.')
+# a = int(mass[0])
+# b = int(mass[1])
+# sum = 0
+# while (a != 0):
+#     sum += a %10
+#     a = a // 10
+# while (b != 0):
+#     sum += b%10
+#     b = b // 10
+# print(int(sum))
 
 
 
 # 2. Программа принимает на вход число N и выдает набор произведений чисел от 1 до N.
+
 
 # n = int(input("n = "))
 # numbers = []
@@ -31,7 +32,7 @@ print(int(sum))
 
 
 # 3. Задайте список из n чисел последовательности (1 + 1/n)^n и выведите на экран их сумму.
-
+# 
 # n = int(input("n = "))
 # lst = [round((1+1/i)**i, 3)
 # for i in range(1, n+1)]
@@ -41,4 +42,11 @@ print(int(sum))
 # 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].
 # Найдите произведение элементов на указанных индексах. Индексы вводятся одной строкой, через пробел.
 
-# n = int(i
+n = int(input("n = "))
+lst = list(map(int, range(-n, n+1)))
+print(lst)
+ind = input("индексы через пробел: ")
+ind = ind.split()
+a = int(ind[0])
+b = int(ind[1])
+print(a, b)
