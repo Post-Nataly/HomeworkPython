@@ -45,14 +45,19 @@
 n = int(input("n = "))
 lst = list(map(int, range(-n, n+1)))
 print(lst)
-indexes = input("индексы через пробел: ")
-indexes = indexes.split()
-# indexes = ''.join(indexes)
-print(indexes)
-# rez = 1
-# for i in ind:
-#     rez = int(ind[i])
-#     rez *= rez
-# a = ind[0]
-# b = ind[1]
-# print(rez)
+i_str = input("индексы через пробел: ")
+i_str = i_str.split()
+i_int = [int(x) for x in i_str]
+num = []
+for i in i_int:
+    j = 0    
+    if i_int[j] in lst:
+        num.append(lst[i])
+        j += 1
+    else:
+        print("Такого индекса нет")
+print(num)
+mult = 1
+for i in num:
+    mult *= i
+print(mult)
