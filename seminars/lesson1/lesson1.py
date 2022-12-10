@@ -82,7 +82,7 @@
 
 # строки
 
-text = 'съешь ещё этих мягких французских булок'
+# text = 'съешь ещё этих мягких французских булок'
 # print(len(text))        # 39
 # print('ещё' in text)    # True
 # print(text.isdigit())   # False

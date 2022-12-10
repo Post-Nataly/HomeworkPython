@@ -67,9 +67,9 @@ print('hello world')
 #     print(i)
 
 
-print('Введите а');
-a = input() # 10
-print('Введите b');
-b = input() # 20
-c = 30
-print(a, ' + ', b, ' = ', c)
+# print('Введите а');
+# a = input() # 10
+# print('Введите b');
+# b = input() # 20
+# c = 30
+# print(a, ' + ', b, ' = ', c)
