@@ -42,22 +42,34 @@
 # 4. Задайте список из N элементов, заполненных числами из промежутка [-N, N].
 # Найдите произведение элементов на указанных индексах. Индексы вводятся одной строкой, через пробел.
 
-n = int(input("n = "))
-lst = list(map(int, range(-n, n+1)))
-print(lst)
-i_str = input("индексы через пробел: ")
-i_str = i_str.split()
-i_int = [int(x) for x in i_str]
-num = []
-for i in i_int:
-    j = 0    
-    if i_int[j] in lst:
-        num.append(lst[i])
-        j += 1
-    else:
-        print("Такого индекса нет")
-print(num)
-mult = 1
-for i in num:
-    mult *= i
-print(mult)
+# n = int(input("n = "))
+# lst = list(map(int, range(-n, n+1)))
+# print(lst)
+# i_str = input("индексы через пробел: ")
+# i_str = i_str.split()
+# i_int = [int(x) for x in i_str]
+# num = []
+# for i in i_int:
+#     j = 0    
+#     if i_int[j] in lst:
+#         num.append(lst[i])
+#         j += 1
+# print(num)
+# mult = 1
+# for i in num:
+#     mult *= i
+# print(mult)
+
+
+# 5. Реализуйте алгоритм перемешивания списка.
+
+from random import randrange
+n = 5
+a = [randrange(1, 10) for i in range(n)]
+print("список: ")
+print(a)
+
+from random import shuffle
+shuffle(a)
+print("перемешанный список: ")
+print(a)
