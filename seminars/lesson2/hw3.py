@@ -17,7 +17,7 @@
 #    Пара - первый и последний элемент, второй и предпоследний и т.д.
 
 # from random import randrange
-# a = [randrange(1, 10) for i in range(7)]
+# a = [randrange(1, 10) for i in range(11)]
 # print("список: ")
 # print(a)
 # b = []
@@ -28,7 +28,7 @@
 #         m = a[i] * a[len(a)-1-j]
 #         b.append(m)
 #         j += 1
-# print("список пар:")
+# print("произведения пар:")
 # print(b)
 
 
@@ -82,14 +82,27 @@
 # Пример:
 
 # - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+        
+k = 8
 
 def fib(n):
     if n in [1, 2]:
         return 1
-    elif (n < 0)
     else:
         return fib(n-1) + fib(n-2)
-list = []
-for e in range(0, 10):
-    list.append(fib(e))
-print(list)
+
+list1 = []
+for e in range(1, k+1):
+    list1.append(fib(e))
+list2 = list1[::-1]
+for e in range(1, k+1):
+    if (len(list2) / 2 != 0):
+        if e%2 != 0:
+            list2[e-1] = list2[e-1]*(-1)
+        else:
+            continue
+
+list3 = list2 + list1
+list3[k:k:1] = [0]
+
+print(list3)
