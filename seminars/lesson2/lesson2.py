@@ -28,6 +28,8 @@
 # import lesson1     # если написать import lesson1 as l, то в дальнейшем можно писать l вместо lesson1
 # print(lesson1.f(1))
 
+
+
 # функции по умолчанию
 
 # def new_string(symbol, count):

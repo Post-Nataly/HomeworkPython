@@ -36,17 +36,60 @@
 
 # - [1.1, 1.2, 3.1, 10.01] => 0.19
 
-import random
-a = [float(random.random()*10) for i in range(7)]
-b = []
-for i in a:
-    b.append('%.2f' % i)
-b = [float(x) for x in b]
-print("список: ")
-print(b)
-c = []
-for i in b:
-    i *= 100
-    i = i % 100
-    c.append(int(i))
-print('%.2f' % (max(c)/100 - min(c)/100))
+# import random
+# a = [float(random.random()*10) for i in range(7)]
+# b = []
+# for i in a:
+#     b.append('%.2f' % i)
+# b = [float(x) for x in b]
+# print("список: ")
+# print(b)
+# c = []
+# for i in b:
+#     i *= 100
+#     i = i % 100
+#     c.append(int(i))
+# print('%.2f' % (max(c)/100 - min(c)/100))
+
+
+
+# Напишите программу, которая будет преобразовывать десятичное число в двоичное.
+
+# Пример:
+
+# - 45 -> 101101
+# - 3 -> 11
+# - 2 -> 10
+
+# a = 1
+# def binary(n):
+#     while n > 0:
+#         if (n % 2 == 0):
+#             return 0
+#         else:
+#             return 1
+#     n = round(n / 2)
+# c = []
+# for i in c:
+#     c.append(binary(a))
+# print(*c)
+# print(binary(a))
+
+
+
+# Задайте число. Составьте список чисел Фибоначчи, в том числе для отрицательных индексов.
+
+# Пример:
+
+# - для k = 8 список будет выглядеть так: [-21 ,13, -8, 5, −3, 2, −1, 1, 0, 1, 1, 2, 3, 5, 8, 13, 21]
+
+def fib(n):
+    if n in [1, 2]:
+        return 1
+    elif (n < 0)
+    else:
+        return fib(n-1) + fib(n-2)
+list = []
+for e in range(0, 10):
+    list.append(fib(e))
+print(list)
