@@ -28,7 +28,19 @@
 # 2. Программа составляет список простых множителей числа N.
 
 n = int(input('Введите число n: '))
-if n % 2 == 0:
+a = []
+x = 2
+while x * x <= n:
+    if n % x == 0:
+        a.append(x)
+        n //= x
+    else:
+        x += 1
+else:
+    a.append(n)
+
+print(a)
+
 
 
 
