@@ -41,7 +41,7 @@
 # def new_string(symbol, count = 5):
 #     return symbol * count
 # print(new_string('!'))       # !!!!!
-# print(new_string(4))         # 12
+# print(new_string(4))         # 20
 
 # возможность передачи неограниченного кол-ва аргументов 
 
@@ -73,7 +73,7 @@
 # кортеж (неизменяемый список)
 
 # a = (2, 4)
-# print(a)
+# print(a)                              # (2, 4)
 # print(a[0])
 
 # t = tuple(['red', 'green', 'blue'])                  # создаем список и конвертируем его в кортеж
@@ -127,26 +127,26 @@
 
 
 
-list1 = [1,2,3,4,5]
-list2 = list1
-for e in list1:
-    print(e)
-print()
-for e in list2:
-    print(e)
-list1[0] = 10
-list2[1] = 15
-print(list1)
-print(list2)        # изменения происходят в обоих списках
+# list1 = [1,2,3,4,5]
+# list2 = list1
+# for e in list1:
+#     print(e)
+# print()
+# for e in list2:
+#     print(e)
+# list1[0] = 10
+# list2[1] = 15
+# print(list1)
+# print(list2)        # изменения происходят в обоих списках
 
-print(len(list1))    # 5
-print(list1.pop())   # 5
-print(list1)         # [10, 15, 3, 4]
-print(list1.pop())   # 4
-print(list1)         # [10, 15, 3]
+# print(len(list1))    # 5
+# print(list1.pop())   # 5
+# print(list1)         # [10, 15, 3, 4]
+# print(list1.pop())   # 4
+# print(list1)         # [10, 15, 3]
 
-print(list1.insert(2, 11))
-print(list1)         # [10, 15, 11, 3]
+# print(list1.insert(2, 11))
+# print(list1)         # [10, 15, 11, 3]
 
-print(list1.append(11))
-print(list1)         # [10, 15, 11, 3, 11]
+# print(list1.append(11))
+# print(list1)         # [10, 15, 11, 3, 11]

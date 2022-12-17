@@ -43,20 +43,28 @@
 
 
 
-
 # 3. Программа выводит список неповторяющихся элементов в заданном списке.
 # Ввод: [1, 1, 2, 3, 4, 4, 4]
 # Вывод: [2, 3]
 
 lst = [1, 1, 2, 3, 4, 4, 4]
-new_lst = []
-for i in new_lst:
-    if new_lst[i] in new_lst:
-        continue
-    else:
-        new_lst.append(lst)
 
-print(new_lst)
+numb_repit = []
+for i in lst:
+    count = 0
+    for j in lst:
+        if i == j:
+            count += 1
+    numb_repit.append(count)
+
+uniq = set()
+index = 0
+while index < len(lst):
+    if numb_repit[index] == 1:
+        uniq.add(lst[index])
+    index += 1
+        
+print(list(uniq))
 
 
 # 4. Задана натуральная степень k. 
