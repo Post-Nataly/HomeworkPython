@@ -47,24 +47,24 @@
 # Ввод: [1, 1, 2, 3, 4, 4, 4]
 # Вывод: [2, 3]
 
-lst = [1, 1, 2, 3, 4, 4, 4]
+# lst = [1, 1, 2, 3, 4, 4, 4]
 
-numb_repit = []
-for i in lst:
-    count = 0
-    for j in lst:
-        if i == j:
-            count += 1
-    numb_repit.append(count)
+# numb_repit = []
+# for i in lst:
+#     count = 0
+#     for j in lst:
+#         if i == j:
+#             count += 1
+#     numb_repit.append(count)
 
-uniq = set()
-index = 0
-while index < len(lst):
-    if numb_repit[index] == 1:
-        uniq.add(lst[index])
-    index += 1
+# uniq = set()
+# index = 0
+# while index < len(lst):
+#     if numb_repit[index] == 1:
+#         uniq.add(lst[index])
+#     index += 1
         
-print(list(uniq))
+# print(list(uniq))
 
 
 # 4. Задана натуральная степень k. 
@@ -74,6 +74,23 @@ print(list(uniq))
 
 # - k=2 => 2*x² + 4*x + 5 = 0 или x² + 5 = 0 или 10*x² = 0
 # - k=4 => 8*(x**4) + 9*(x**3) + 1*(x**2) + 5*x + 4 = 0 или 8*(x**4) + 5*x + 4 = 0 и т.д.
+
+# data = open('seminars/lesson2/newfile.txt', 'a')
+
+# from random import randint
+
+# k = int(input(''))
+
+# coefficients = []
+# for i in range(k+1):
+#     coefficients.append(randint(0, 100))
+# while k > 2:
+#     for i in range(k-1):
+#         data.write(str(f"{coefficients[i]} * (x ** {k}) + "))
+#         k -= 1
+#         i += 1
+# else:
+#     data.write(str(f"{coefficients[-2]} * x + {coefficients[-1]} = 0"))
 
 
 

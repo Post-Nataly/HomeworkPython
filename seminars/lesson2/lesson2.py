@@ -1,12 +1,13 @@
 # работа с файлами
 
 # colors = ['red', 'green', 'blue']
-# data = open('file.txt', 'a') # а - добавление данных, r - чтение, w - запись
-# data.writelines(colors) # для записи набора данных (без разделителей)
-# data.close() # закрыть файл
+# data = open('file.txt', 'a')    # а - добавление данных, r - чтение, w - запись
+# data.writelines(colors)         # для записи набора данных (без разделителей)
+# data.close()                    # закрыть файл
+
 # colors = ['red', 'green', 'white']
 # data = open('file.txt', 'w')
-# data.write('\nLINE 2\n')
+# data.write('\nLINE 2\n')        # добавление данных
 # data.write('LINE 3\n')
 # data.close()
 
