@@ -68,7 +68,8 @@
 
 
 # 4. Задана натуральная степень k. 
-# Сформировать случайным образом список коэффициентов (значения от 0 до 100) многочлена и записать в файл многочлен степени k.
+# Сформировать случайным образом список коэффициентов (значения от 0 до 100) многочлена 
+# и записать в файл многочлен степени k.
 
 # Пример:
 
@@ -99,5 +100,34 @@
 #    Сформировать файл, содержащий сумму многочленов (складываются числа, у которых "х" в одинаковых степенях).
 #    Пример итогового файла: 8*(x**4) + 9*(x**3) + 1*(x**2) + 5*x + 4 = 0
 
-data = open('file.txt', 'r')
-data = open('newfile.txt', 'r')
+# data = open('seminars/lesson2/file.txt', 'r')
+
+# line1 = data.readline()
+
+# data = open('seminars/lesson2/newfile.txt', 'r')
+
+# line2 = data.readline()
+
+# print(line1.split(' + '))
+
+# print(line2.split(' + '))
+
+# for i in zip(line1.split(' + '), line2.split(' + ')):
+#     print(i)
+
+# line1 = [int(x) for x in line1]
+# print(line1)
+
+# c = list(map(int, line1))
+# print(c)
+
+from sympy import *
+ 
+# Создание символьных переменных
+x = sympy.Symbol('x')
+y = sympy.Symbol('y')
+z = sympy.Symbol('z')
+ 
+# Раскрытие скобок
+z = (x+y) ** 2
+sympy.print(z.expand())
