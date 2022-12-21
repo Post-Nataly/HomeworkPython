@@ -97,8 +97,8 @@
 # print(dictionary['left'])   # l
 
 # for k in dictionary.keys():
-#     print(k)                # up left down right
-#     print(dictionary[k])      # l u l d r
+#     print(k)                # up left down right  /выводит ключи
+#     print(dictionary[k])    # l u l d r           /выводит значения
 
 
 

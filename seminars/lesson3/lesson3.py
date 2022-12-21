@@ -137,7 +137,7 @@
 
 # Функция enumerate
 
-users = ['users1', 'users2', 'users3', 'users4', 'users5']
+# users = ['users1', 'users2', 'users3', 'users4', 'users5']
 
-data = list(enumerate(users))
-print(data)                       # [(0, 'users1'), (1, 'users2'), (2, 'users3'), (3, 'users4'), (4, 'users5')]
+# data = list(enumerate(users))
+# print(data)                       # [(0, 'users1'), (1, 'users2'), (2, 'users3'), (3, 'users4'), (4, 'users5')]

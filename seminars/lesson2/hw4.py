@@ -100,34 +100,64 @@
 #    Сформировать файл, содержащий сумму многочленов (складываются числа, у которых "х" в одинаковых степенях).
 #    Пример итогового файла: 8*(x**4) + 9*(x**3) + 1*(x**2) + 5*x + 4 = 0
 
-# data = open('seminars/lesson2/file.txt', 'r')
+data = open('seminars/lesson2/file.txt', 'r')
 
-# line1 = data.readline()
+poly1 = data.readline()
 
-# data = open('seminars/lesson2/newfile.txt', 'r')
+data = open('seminars/lesson2/newfile.txt', 'r')
 
-# line2 = data.readline()
+poly2 = data.readline()
 
-# print(line1.split(' + '))
+poly1 = poly1.split(' ')
 
-# print(line2.split(' + '))
+key1 = []
+a = 0
+for i in poly1:
+    key1.append(a)
+    a += 1
+keyy1 = reversed(key1)
 
-# for i in zip(line1.split(' + '), line2.split(' + ')):
-#     print(i)
+poly1_dict = dict(zip(keyy1, poly1))
+print(poly1_dict)
 
-# line1 = [int(x) for x in line1]
-# print(line1)
+# dict1 = poly1_dict.keys()
+# print(dict1)
 
-# c = list(map(int, line1))
-# print(c)
+poly2 = poly2.split(' ')
 
-from sympy import *
- 
-# Создание символьных переменных
-x = sympy.Symbol('x')
-y = sympy.Symbol('y')
-z = sympy.Symbol('z')
- 
-# Раскрытие скобок
-z = (x+y) ** 2
-sympy.print(z.expand())
+key2 = []
+a = 0
+for i in poly2:
+    key2.append(a)
+    a += 1
+keyy2 = reversed(key2)
+
+poly2_dict = dict(zip(keyy2, poly2))
+print(poly2_dict)
+
+dictionary = {}
+
+# if len(poly1_dict) >= len (poly2_dict):
+    for i in poly2_dict.keys():
+        for j in poly1_dict.keys():
+            if i == j:
+                if poly2_dict[i] == int():
+                    poly2_dict[i] + poly1_dict[j]
+                    dictionary = dict.fromkeys(poly2_dict[i], poly1_dict[j])
+                else:
+                    continue
+            else:
+                continue           
+# else:
+    for j in poly1_dict.keys():
+        for i in poly2_dict.keys():
+            if i == j:
+                if poly1_dict[j] == int():
+                    poly1_dict[j] + poly2_dict[i]
+                    dictionary = dict.fromkeys(poly1_dict[j], poly2_dict[i])
+                else:
+                    continue
+            else:
+                continue    
+        
+print(dictionary)
