@@ -109,6 +109,13 @@ data = open('seminars/lesson2/newfile.txt', 'r')
 poly2 = data.readline()
 
 poly1 = poly1.split(' ')
+def to_int(number):
+    try:
+        return int(number)
+    except ValueError:
+        return int("nan")
+
+print(list(map(to_int, poly1)))
 
 key1 = []
 a = 0
@@ -119,9 +126,6 @@ keyy1 = reversed(key1)
 
 poly1_dict = dict(zip(keyy1, poly1))
 print(poly1_dict)
-
-# dict1 = poly1_dict.keys()
-# print(dict1)
 
 poly2 = poly2.split(' ')
 
@@ -135,29 +139,33 @@ keyy2 = reversed(key2)
 poly2_dict = dict(zip(keyy2, poly2))
 print(poly2_dict)
 
-dictionary = {}
 
-# if len(poly1_dict) >= len (poly2_dict):
-    for i in poly2_dict.keys():
-        for j in poly1_dict.keys():
-            if i == j:
-                if poly2_dict[i] == int():
-                    poly2_dict[i] + poly1_dict[j]
-                    dictionary = dict.fromkeys(poly2_dict[i], poly1_dict[j])
-                else:
-                    continue
-            else:
-                continue           
+# for i in poly1_dict.items() & poly2_dict.items():
+#     print(i, poly1_dict[i], poly2_dict[i])
+
+# dictionary = {}
+# dic = 0
+# # if len(poly1_dict) >= len (poly2_dict):
+# for i in poly2_dict.keys():
+#     for j in poly1_dict.keys():
+#         if i == j:
+#             if poly2_dict[i] == int():
+#                 dic = poly2_dict[i] + poly1_dict[j]
+#                 dictionary = dict.fromkeys(dic)
+#             else:
+#                 continue
+#         else:
+#             continue
 # else:
-    for j in poly1_dict.keys():
-        for i in poly2_dict.keys():
-            if i == j:
-                if poly1_dict[j] == int():
-                    poly1_dict[j] + poly2_dict[i]
-                    dictionary = dict.fromkeys(poly1_dict[j], poly2_dict[i])
-                else:
-                    continue
-            else:
-                continue    
+    # for j in poly1_dict.keys():
+    #     for i in poly2_dict.keys():
+    #         if i == j:
+    #             if poly1_dict[j] == int():
+    #                 poly1_dict[j] + poly2_dict[i]
+    #                 dictionary = dict.fromkeys(poly1_dict[j], poly2_dict[i])
+    #             else:
+    #                 continue
+    #         else:
+    #             continue    
         
-print(dictionary)
+# print(dictionary)

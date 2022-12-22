@@ -100,6 +100,12 @@
 #     print(k)                # up left down right  /выводит ключи
 #     print(dictionary[k])    # l u l d r           /выводит значения
 
+# сделать из словаря список:
+# lst = []
+# for key, value in dictionary.items():    # dictionary - имеющийся словарь
+#     lst.append(value)
+# print(lst)
+
 
 
 # множества
