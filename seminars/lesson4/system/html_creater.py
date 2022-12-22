@@ -13,7 +13,7 @@ def create(device = 1):
         .format(style, wind_speed_view(device))
     html += '    </body>\n</html>'
 
-    with open('index.html', 'w') as page:
+    with open('seminars/lesson4/index.html', 'w') as page:
         page.write(html)
 
     return html
@@ -30,7 +30,7 @@ def new_create(data, device = 1):
         .format(style, w)
     html += '    </body>\n</html>'
 
-    with open('new_index.html', 'w') as page:
+    with open('seminars/lesson4/new_index.html', 'w') as page:
         page.write(html)
 
     return data

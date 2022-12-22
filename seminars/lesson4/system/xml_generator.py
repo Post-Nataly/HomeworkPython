@@ -12,7 +12,7 @@ def create(device = 1):
         .format(wind_speed_view(device))
     xml += '</xml>'
 
-    with open('data.xml', 'w') as page:
+    with open('seminars/lesson4/data.xml', 'w') as page:
         page.write(xml)
 
     return xml
@@ -29,7 +29,7 @@ def new_create(data, device = 1):
         .format(w)
     xml += '</xml>'
 
-    with open('new_data.xml', 'w') as page:
+    with open('seminars/lesson4/new_data.xml', 'w') as page:
         page.write(xml)
 
     return data
